@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: Convo2
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: d784f1930c444ea4d82d5b60ab9db98a, type: 2}
+    myText: Oh dus je denkt dat je heel wat bent?
+  - character: {fileID: 11400000, guid: d784f1930c444ea4d82d5b60ab9db98a, type: 2}
+    myText: Pak hem Sans!
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Huh?
+  - character: {fileID: 11400000, guid: 457b80398e4d00d46a1c90b4c7e1244a, type: 2}
+    myText: Eh eh eh eh eh eh eh
