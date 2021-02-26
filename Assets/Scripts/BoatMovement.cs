@@ -6,13 +6,14 @@ public class BoatMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Collider2D col;
+    public ParticleSystem particleSystem;
     
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
-        //Physics.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("IgnoreBoatCollision"));
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("IgnoreBoatCollision"));
+        //particleSystem = particleObject.GetComponent<ParticleSystem>();
     }
     
     private void FixedUpdate()
@@ -20,26 +21,15 @@ public class BoatMovement : MonoBehaviour
         Vector2 movement = Input.GetAxis("Vertical") * transform.up;
         float forwardVelocity = Mathf.Abs(transform.InverseTransformDirection(rb.velocity).y);
         float turningSpeed = -Input.GetAxis("Horizontal") * forwardVelocity * 20 * Time.deltaTime;
-
         transform.Rotate(new Vector3(0, 0, turningSpeed));
         rb.AddForce(movement);
+        UpdateParticleSystem();
+        
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void UpdateParticleSystem()
     {
-        //Physics2D.IgnoreLayerCollision
-        //Physics2D.IgnoreCollision(col, collision.collider);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Physics2D.IgnoreCollision(col, collision.collider);
-        /*
-        if (collision.gameObject.layer != LayerMask.NameToLayer("BoatCollision"))
-        {
-            Physics2D.IgnoreCollision(col, collision.collider);
-            //Physics.IgnoreCollision(rb.collider, collider);
-        }
-        */
+        if (rb.velocity != Vector2.zero) particleSystem.transform.forward = Quaternion.Euler(0, 0, -180) * rb.velocity.normalized;
+        particleSystem.startSpeed = rb.velocity.magnitude * 5;
     }
 }
