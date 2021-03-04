@@ -42,7 +42,7 @@ public class WaitState : TestState
 
     public override void BeginState()
     {
-        Debug.Log("waitstate begin!");
+        //Debug.Log("waitstate begin!");
         secondsToWait = UnityEngine.Random.Range(2, 8);
         nextState = new RotateState(owner, .5f);
     }
@@ -58,7 +58,7 @@ public class WaitState : TestState
 
     public override void EndState()
     {
-        Debug.Log("waitstate end!");
+        //Debug.Log("waitstate end!");
     }
 }
 
@@ -78,7 +78,7 @@ public class RotateState : TestState
 
     public override void BeginState()
     {
-        Debug.Log("Rotatestate begin!");
+        //Debug.Log("Rotatestate begin!");
         nextState = new WaitState(owner);
         difVal = Mathf.Round(UnityEngine.Random.Range(0, 2)) == 1 ? rotTotal : -rotTotal;
         rotatedValue = 0;
@@ -103,7 +103,7 @@ public class RotateState : TestState
 
     public override void EndState()
     {
-        Debug.Log("rotate end! ");
+        //Debug.Log("rotate end! ");
     }
 }
 
