@@ -7,6 +7,9 @@ public class CameraMoveScript : MonoBehaviour
     private Vector3 wantedCameraPosition = new Vector3();
     private Vector3 CameraStartPosition = new Vector3();
 
+    private int cutsceneInt = 0;
+    [SerializeField]
+    private Vector2[] cutscenePositions;
     [SerializeField]
     private float maxCameraDistance = 5f;
     [SerializeField]
