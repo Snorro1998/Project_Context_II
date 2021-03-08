@@ -5,14 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Dialogue Event", menuName = "Dialogue System/Dialogue Event")]
 public class EventBehaviour : ScriptableObject
 {
-    public void TestEvent()
+    public void DoSomethingGoodEvent()
     {
-        Debug.Log("Test event 01");
-        Destroy(References.instance.testGameObject);
+        References.instance.DoSomethingGood();
     }
 
-    public void TestEvent02()
+    public void DoSomethingBadEvent()
     {
-        Debug.Log("Test event 02 succes");
+        References.instance.DoSomethingBad();
     }
 }

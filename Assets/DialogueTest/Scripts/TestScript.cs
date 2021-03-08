@@ -8,17 +8,19 @@ using UnityEngine;
 public class TestScript : MonoBehaviour
 {
     public DialogueBase dialogue;
+    public bool hasTriggered = false;
 
     public void TriggerDialogue()
     {
         DialogueManager.instance.EnqueueDialogue(dialogue);
     }
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (!hasTriggered)
         {
             TriggerDialogue();
+            hasTriggered = true;
         }
     }
 }
