@@ -1,61 +1,69 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Een smerig savesysteem dat alleen werkt zolang je het spel niet afsluit
 /// </summary>
-public class SaveSystem : MonoBehaviour
+public class SaveSystem : Singleton<SaveSystem>
 {
-    public GameObject objectsToSave;
-    private GameObject save1;
+    public KeyCode switchSceneKey = KeyCode.P;
 
-    public KeyCode saveKey = KeyCode.S;
-    public KeyCode loadKey = KeyCode.L;
+    SaveCollection saveCollection;
+    private Dictionary<string, GameObject> savedScenes = new Dictionary<string, GameObject>();
+    // Dit is om het te testen
+    private Queue<string> sceneIDs = new Queue<string>();
 
-    private void Awake()
+    protected override void Awake()
     {
-        DontDestroyOnLoad(this);
+        base.Awake();
+        sceneIDs.Enqueue("secondScene");
+        sceneIDs.Enqueue("nieuwetestscene");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        saveCollection = FindObjectOfType<SaveCollection>();
     }
 
-    private void SaveDirty()
+    // Wordt aangeroepen als de scene is geladen
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (save1 != null)
+        if (savedScenes.ContainsKey(scene.name))
         {
-            Destroy(save1);
-        }   
-        save1 = Instantiate(objectsToSave);
-        save1.name = "save1";
-        DontDestroyOnLoad(save1);
-        save1.SetActive(false);
-    }
-
-    private void LoadDirty()
-    {
-        if (save1 != null)
-        {
-            string name = "";
-            if (objectsToSave != null)
-            {
-                name = objectsToSave.name;
-                Destroy(objectsToSave);
-            }
-            objectsToSave = Instantiate(save1);
-            objectsToSave.name = name;
-            objectsToSave.SetActive(true);
+            var save = savedScenes[scene.name];
+            saveCollection = FindObjectOfType<SaveCollection>();
+            if (saveCollection) DestroyImmediate(saveCollection.gameObject);
+            SceneManager.MoveGameObjectToScene(save, SceneManager.GetActiveScene());
+            save.SetActive(true);
         }
+    }
+
+    // Laadt een andere scene
+    private void ChangeScene(string sceneToLoad)
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        saveCollection = FindObjectOfType<SaveCollection>();
+        if (saveCollection)
+        {
+            DontDestroyOnLoad(saveCollection.gameObject);
+            saveCollection.gameObject.SetActive(false);
+
+            if (!savedScenes.ContainsKey(sceneName))
+            {
+                savedScenes.Add(sceneName, saveCollection.gameObject);
+            }
+        }
+        
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     private void Update()
-    {
-        if (Input.GetKeyDown(saveKey))
+    {        
+        if (Input.GetKeyDown(switchSceneKey))
         {
-            SaveDirty();
-        }
-
-        if (Input.GetKeyDown(loadKey))
-        {
-            LoadDirty();
+            string id = sceneIDs.Dequeue();
+            sceneIDs.Enqueue(id);
+            ChangeScene(id);
         }
     }
 }

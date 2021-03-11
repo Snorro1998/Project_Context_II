@@ -11,7 +11,7 @@ public class TargetMoverV2 : MonoBehaviour
     public bool onlyOnDoubleClick;
     public bool use2D;
 
-    Camera cam;
+    public Camera cam;
 
     public void Start()
     {
@@ -25,6 +25,7 @@ public class TargetMoverV2 : MonoBehaviour
         if (DialogueManager.instance.inDialogue) return;
         if (Input.GetMouseButtonDown(0) && cam != null)
         {
+            //Debug.Log("updatetargetposition");
             UpdateTargetPosition();
         }
     }

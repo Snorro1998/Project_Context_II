@@ -31,7 +31,7 @@ public class AIPathMover : MonoBehaviour
                     nodes.Enqueue(t);
                 }
             }
-            GetNextNode();
+            if (destinationSetter.target == null) GetNextNode();
         }
         
     }
