@@ -25,14 +25,14 @@ public class BoatMovement2 : MonoBehaviour
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        if (GameManager.canBoatmove == true)
-        {
-            //Ervoor zorgen dat de boot naar het punt gaat waar de speler op geklikt heeft.
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, Time.deltaTime * moveSpeed); //Speed Lerpen voor leuk effect?
-        }
+        //if (GameManager.canBoatmove == true)
+        //{
+        //    //Ervoor zorgen dat de boot naar het punt gaat waar de speler op geklikt heeft.
+        //    transform.position = Vector2.MoveTowards(transform.position, targetPosition, Time.deltaTime * moveSpeed); //Speed Lerpen voor leuk effect?
+        //}
 
         //Variables meegeven aan de gamemanager
-        GameManager.boatPosition = transform.position;
+        //GameManager.boatPosition = transform.position;
         GameManager.boatIsMoving = ismoving();
     }
     private bool ismoving()

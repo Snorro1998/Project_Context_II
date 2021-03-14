@@ -6,10 +6,14 @@ public class GameManager : MonoBehaviour
 {
     //Een goede plek om alle belangijke variables en bools bij te houden.
     public static bool boatIsMoving;
-    public static bool canBoatmove = true;
-    public static bool isInCutscene;
+    public static bool hasVisitedScientist = false;
+    public static bool hasVisitedMonster = false;
+    public static bool hasVisitedMonster2 = false;
+    public static bool hasVisitedBoss = false;
+    public static bool hasVisitedCaptain = false;
+    public static bool hasVisitedCaptain2 = false;
+    public static bool hasVisitedOma = false;
     int counter;
-    public static Vector3 boatPosition = new Vector3();
     public static GameManager Instance
     {
         get;

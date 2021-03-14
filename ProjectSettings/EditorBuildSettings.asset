@@ -11,4 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/nieuwetestscene.unity
     guid: 28412e27f2394df4693c1eae5d414923
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/Kapitein.unity
+    guid: 1b0149a5d9f262e4dad00678505b2db6
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/Monster.unity
+    guid: 92439c16ad374dd469e2911948f50d38
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/MonsterMetCruiseSchip.unity
+    guid: 7698059f267be44459b8fd475755e1fd
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/Oma.unity
+    guid: ed26ac7e71d1611498abdb50e996fc67
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/Scientist.unity
+    guid: e50b7dfc9288afa4486999538bcf929d
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/Boss.unity
+    guid: 4b0750567f10ab54182a667b118c5120
   m_configObjects: {}
