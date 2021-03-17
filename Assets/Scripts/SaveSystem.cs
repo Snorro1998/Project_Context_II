@@ -37,8 +37,9 @@ public class SaveSystem : Singleton<SaveSystem>
         }
     }
 
-    // Laadt een andere scene
-    private void ChangeScene(string sceneToLoad)
+    // Laadt een andere scene 
+    // Deze moet public zijn
+    public void ChangeScene(string sceneToLoad)
     {
         string sceneName = SceneManager.GetActiveScene().name;
 

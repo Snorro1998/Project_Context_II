@@ -26,37 +26,44 @@ public class PlayerColliderManager : MonoBehaviour
         if(collision.tag == "Boss" && !GameManager.hasVisitedBoss)
         {
             GameManager.hasVisitedBoss = true;
-            SceneManager.LoadScene(7);
+            SaveSystem.Instance.ChangeScene("Boss");
+            //SceneManager.LoadScene(7);
         }
         if (collision.tag == "Monster" && !GameManager.hasVisitedMonster)
         {
             GameManager.hasVisitedMonster = true;
-            SceneManager.LoadScene(3);
+            SaveSystem.Instance.ChangeScene("Monster");
+            //SceneManager.LoadScene(3);
         }
         if (collision.tag == "Monster" && !GameManager.hasVisitedMonster2 && GameManager.hasVisitedMonster)
         {
             GameManager.hasVisitedMonster2 = true;
-            SceneManager.LoadScene(4);
+            SaveSystem.Instance.ChangeScene("Monster2");
+            //SceneManager.LoadScene(4);
         }
         if (collision.tag == "Scientist" && !GameManager.hasVisitedScientist)
         {
             GameManager.hasVisitedScientist = true;
-            SceneManager.LoadScene(6);
+            SaveSystem.Instance.ChangeScene("Scientist");
+            //SceneManager.LoadScene(6);
         }
         if (collision.tag == "CruiseSchip" && !GameManager.hasVisitedCaptain && GameManager.hasVisitedOma)
         {
             GameManager.hasVisitedCaptain = true;
-            SceneManager.LoadScene(2);
+            SaveSystem.Instance.ChangeScene("Kapitein");
+            //SceneManager.LoadScene(2);
         }
         if (collision.tag == "CruiseSchip" && !GameManager.hasVisitedCaptain2 && GameManager.hasVisitedCaptain)
         {
             GameManager.hasVisitedCaptain = true;
-            SceneManager.LoadScene(2);
+            SaveSystem.Instance.ChangeScene("Kapitein");
+            //SceneManager.LoadScene(2);
         }
         if (collision.tag == "CruiseSchip" && !GameManager.hasVisitedOma)
         {
             GameManager.hasVisitedCaptain = true;
-            SceneManager.LoadScene(5);
+            SaveSystem.Instance.ChangeScene("Oma");
+            //SceneManager.LoadScene(5);
         }
     }
 }
