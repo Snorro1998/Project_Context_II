@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{dadc0da7-b520-4b16-9c3f-77fb8703857b}">
+		<property name="assetPath">
+			<value>Intermission_Final.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>46.052063492063489</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec72277f-fb74-45ad-9d0f-21f4e6c6e610}</destination>
+		</relationship>
+	</object>
+</objects>
