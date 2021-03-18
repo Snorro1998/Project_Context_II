@@ -14,7 +14,7 @@ public class BasicSceneScript : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(1);
         }
     }
 }
