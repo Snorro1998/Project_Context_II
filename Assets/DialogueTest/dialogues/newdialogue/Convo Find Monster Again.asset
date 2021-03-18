@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: Convo Find Monster Again
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: '*SHRIEK'
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: 'There it is again! '
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: '*Wailing'
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "I don\u2019t think it wants to hurt anybody, look at it. It\u2019s covered
+      with the dead corals."
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Dead corals? Maybe that\u2019s what the scientist was murmuring about.
+      You know, the thing about the chemical reaction and stuff."
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: '*Wailing'
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: 'It must have something to do with the cruise ship. I think the smoke
+      that came out of the funnel must somehow have hurt it. '
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "But how can we be sure? You heard what the captain said. If she would
+      ever see us again she will make a shark meal out of us. I don\u2019t know about
+      you, but I like my life."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Okay, here me out on this one. What if we forced the captain to speak
+      with us.
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: Great idea! We could secretly plant bombs on the boat and threaten to
+      detonate them unless the captain speaks with us.
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: '*murmurs: that would serve my grandma right. Uhh.. I mean, we could
+      also ask our new friend here to come with us. He might be able to intimidate
+      the captain just enough to squeeze a statement out of there.'
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: What an amazing idea! But how? Should we just ask it?
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Let\u2019s give it a try. Hey buddy, would you like to\u2026"
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: SHRIEK
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: Alright, that went well. What else could we try? Maybe we can lure him
+      somehow?
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Wait, I got an idea, do you still got that jar from the scientist?
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: 'Uhh, the polyps you mean? Yeah, I got them. '
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: The scientist mentioned it could help, maybe this is what he meant?
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: Curious shriek
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Look, it\u2019s interested in the colours. "
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Oh wow, they actually are beautiful, aren\u2019t they?"
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "It\u2019s working! You keep its attention, I\u2019ll find the cruise
+      ship. "

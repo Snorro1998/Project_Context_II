@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: Convo Interaction with Cruiseship 2
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: "What? What\u2019s going on? That thing is huge! It will totally wreck
+      our ship!"
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: 'Captain! Remember us? '
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: What? You two again? What do you want from me?
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: We demand a dialogue with you. It looks like your ship is harming the
+      ocean and we want to know everything you know about it.
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: "You can\u2019t do that. "
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Look at the monster! Your boat contributed this. It is your creation.
+      If you don\u2019t stop it, it will have no choice but to destroy you in order
+      to survive. Can\u2019t you see?"
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: "It\u2019s not my fault this ship is sailing. The passengers apparently
+      don\u2019t mind, otherwise they would not make use of my services, would they?
+      They all know what\u2019s going on, but still choose to stay here. I\u2019m
+      just the supplier. They are to blame, not me."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "The passengers told us the exact opposite. They blamed you for the dead
+      corals. Can\u2019t you see that blaming each other only worsened the problems
+      instead of improving them? Look at this poor guy, it\u2019s one of the most
+      beautiful creations of mother nature. "
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: I guess it has never been my intention to kill anything...
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Were you aware of your contribution to this problem?
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: 'Our ship''s engines are driven by diesel. The substances that are released
+      by the combustion react with water, turning it into acid. '
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Don\u2019t you know there are alternative ways to sail the oceans without
+      emitting those poisonous substances?"
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: '*Loud shriek'
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: "I\u2019m so sorry buddy. I\u2019ve wanted to quit this job anyway. All
+      those greedy passengers\u2026 They make me sick. I will set course to land
+      and make sure to never sail a cruise ship again."
+  - character: {fileID: 11400000, guid: b18b3dedd9726a744b0a36f388d815e3, type: 2}
+    myText: Bye horrible creature. Thank you for opening my eyes.
+  - character: {fileID: 0}
+    myText: 'Statement: Corporations react on demand from consumers. They will alter
+      their supply, if demand changes.'

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: Convo Coral Monster
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Holy mother of God...zilla, it\u2019s enormous! And it smells horrible!"
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: What do we do? It can easily wreck our ship.
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: '*Loud shriek*'
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: AAAAAHHH!
+  - character: {fileID: 0}
+    myText: '*wailing monster sound*'
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: Captain, we have to get away from here, quickly!
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "No wait, I don\u2019t think it wants to harm us."
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: '*Again wailing sound*'
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Hi there, little guy. Is everything okay?
+  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
+    myText: "*Suddenly sees white trail behind our boat. \u2192 *Loud angry shriek
+      and disappears again"
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "I think I crapped my pants\u2026"
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: I think it seeked our help. It looked like it got scared or angry somehow.
+      You noticed the white trail behind us Crewmate?
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: No..?

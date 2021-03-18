@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: Convo Prologue
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "Hi \u201Cplayer\u201D, the bureau received some interesting intel on
+      some mysterious events on the oceans."
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "All our other reporters are busy creating reports on those new \u2018Mars-people\u2019
+      everybody\u2019s talking about. Since you are still prohibited to set foot
+      on land after your last\u2026 uhm... incident, the bureau figured to send you
+      to find out what\u2019s going on at sea. \r\nAre you in?\r\n"
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Hmm, I guess after all these years, I could pick up my pen again.
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "How marvelous. You\u2019ll leave tomorrow."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: What? But I...
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "Here\u2019s the report with your objectives. Find out what\u2019s going
+      on by gathering statements and imagery. If you complete all reports you can
+      finalize your documentary"
+  - character: {fileID: 0}
+    myText: '*Show report*'
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "The bureau told me to give you this new ship. It runs on electricity
+      and is equipped with the newest technology. However, since we need the reports
+      fast, I figured you\u2019ll get another boat. It\u2019s old, rusty and runs
+      on diesel, but it\u2019s faster than the electric one. It also comes with the
+      sweet aroma of diesel fumes haha."
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "Here, I brought you a souvenir. It\u2019s a bottle of water, with MY
+      face on it. It will remind you of me during the lonely hours at sea."
+  - character: {fileID: 0}
+    myText: '*Gives bottle*'
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "Farewell, and don\u2019t come back until you fulfill your task! Or else
+      I\u2019ll make sure you\u2019ll never set foot on land again."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "*Mumbles: Son of a\u2026 *throws bottle in ocean"

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: Convo Scientist
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Captain look! It\u2019s a boat. Let\u2019s see if they can tell us something
+      about the trail."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Hi dear sir, could you help us find out...
+  - character: {fileID: 11400000, guid: 8194aa6a184a67f4f9c9d1d7b9cfe625, type: 2}
+    myText: "No, no, no, noooo! It\u2019s horrible. I\u2019ve never seen something
+      so devastating in my life."
+  - character: {fileID: 11400000, guid: 8194aa6a184a67f4f9c9d1d7b9cfe625, type: 2}
+    myText: "It\u2019s dead. It\u2019s all dead. The corals, the mighty beautiful
+      corals, everything died. They turn white when they die you see. My samples
+      tell me the water surrounding the corals has turned acidic somehow. Corals
+      can\u2019t survive under these acidic circumstances."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: How could this happen?
+  - character: {fileID: 11400000, guid: 8194aa6a184a67f4f9c9d1d7b9cfe625, type: 2}
+    myText: "The water must have undergone a chemical reaction. Whatever caused this
+      to happen must have emitted an enormous amount of some toxic substance, it\u2019s
+      the only explanation. By Einstein\u2019s mustache, it\u2019s a disaster."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Do corals not die all the time and just grow back again?
+  - character: {fileID: 11400000, guid: 8194aa6a184a67f4f9c9d1d7b9cfe625, type: 2}
+    myText: "You don\u2019t understand, kid. Horrible things could happen if the
+      killing of corals is not stopped this instance, but no one will listen to me.
+      NO ONE. The chemical reaction could create\u2026 I\u2019m sorry, it\u2019s
+      too terrifying to talk about. "
+  - character: {fileID: 11400000, guid: 8194aa6a184a67f4f9c9d1d7b9cfe625, type: 2}
+    myText: "Help me and all the souls sailing this ocean. Find out what\u2019s causing
+      all this before\u2026 before it\u2019s too late."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Don\u2019t worry sir, we will get to the bottom of this."
+  - character: {fileID: 11400000, guid: 8194aa6a184a67f4f9c9d1d7b9cfe625, type: 2}
+    myText: "Here take this with you. *(hands over polyps) They are coloured polyps.
+      They will help you, but won\u2019t solve anything."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Thanks, I guess...
+  - character: {fileID: 0}
+    myText: "Statement: Something has chemically reacted with the ocean water, causing
+      it to turn acidic. Corals are dying in great numbers because of the acidic
+      water. The scientist tried to warn the people, but they won\u2019t listen."

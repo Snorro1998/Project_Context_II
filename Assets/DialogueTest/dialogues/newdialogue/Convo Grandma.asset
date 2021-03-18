@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: Convo Grandma
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
+    myText: "\u201CPlayer\u201D \u201CPlayer\u201D, is that you? Oh my days, it is
+      you. Sweetheart I haven\u2019t seen you in ages! You\u2019ve grown so big,
+      especially in the belly area."
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Captain, if I\u2019m not mistaken that\u2019s\u2026 that\u2019s your
+      Granny. The years haven\u2019t treated her that well, have they?"
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Nana??
+  - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
+    myText: My child, what brings you to this paradise on earth?
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "We\u2019re conducting research to make a documentary on some mysterious
+      events on the ocean."
+  - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
+    myText: "A documentary you say? Are you allowed to get to work again then? I
+      see\u2026 splendid! What are you investigating now? "
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: We found a mysterious trail of dying corals, leading right to this ship.
+  - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
+    myText: "Dying corals? I\u2019ve heard about that.. yes. Too bad simple folks
+      like me can\u2019t do anything about it."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Wait, you know about the dying corals? Then why are you on this ship?
+      We heard dying corals could have very severe consequences.
+  - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
+    myText: "Yeah that crazy scientist guy yelled at this ship. It\u2019s not my
+      fault this ship is sailing, is it? If it wouldn\u2019t exist I could never
+      have gone on one, could I? The captain is to blame, not me. I\u2019m just enjoying
+      the luxury."
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "You don\u2019t think you shouldn\u2019t..."
+  - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
+    myText: "Well well child, I\u2019m gonna get myself a margherita. "
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: But...
+  - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
+    myText: "Yes, nice seeing you again too\u2026 Say hi to those parents of yours,
+      adieu."
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Well she hasn\u2019t changed a bit. Let\u2019s see if the captain could
+      tell us more about what\u2019s going on. "
+  - character: {fileID: 0}
+    myText: "Statements: The big corporations are to blame for the dying corals,
+      consumers wouldn\u2019t be able to make use of cruise ships if the ships didn\u2019t
+      exist."
