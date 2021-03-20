@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     public static bool hasVisitedCaptain = false;
     public static bool hasVisitedCaptain2 = false;
     public static bool hasVisitedOma = false;
-    int counter;
     public static GameManager Instance
     {
         get;
@@ -34,8 +33,5 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        counter++;
-        counter /= 60;
-        Debug.Log(counter);
     }
 }

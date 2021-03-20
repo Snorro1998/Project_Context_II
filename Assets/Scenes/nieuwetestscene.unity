@@ -451,7 +451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35580644}
   m_LocalRotation: {x: -0.025689183, y: 0.07542899, z: -0.9952475, w: -0.055974387}
-  m_LocalPosition: {x: 7.26, y: -59.1, z: -0.5}
+  m_LocalPosition: {x: 7.26, y: -59.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1598148244}
@@ -908,7 +908,7 @@ GameObject:
   - component: {fileID: 116185038}
   - component: {fileID: 116185037}
   - component: {fileID: 116185031}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11727,7 +11727,7 @@ GameObject:
   - component: {fileID: 434020903}
   - component: {fileID: 434020902}
   - component: {fileID: 434020896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_B (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17241,7 +17241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459880810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.26, y: 0, z: -0.5}
+  m_LocalPosition: {x: 7.26, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1598148244}
@@ -27258,7 +27258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666784897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -80.1, y: 11.3, z: -0.5}
+  m_LocalPosition: {x: -80.1, y: 11.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1598148244}
@@ -42542,7 +42542,7 @@ GameObject:
   - component: {fileID: 950994559}
   - component: {fileID: 950994558}
   - component: {fileID: 950994557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58485,7 +58485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1095607321
 Transform:
   m_ObjectHideFlags: 0
@@ -63376,7 +63376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146507470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.41, y: 11.3, z: -0.5}
+  m_LocalPosition: {x: -16.41, y: 11.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1598148244}
@@ -64524,7 +64524,7 @@ GameObject:
   - component: {fileID: 1280091807}
   - component: {fileID: 1280091806}
   - component: {fileID: 1280091805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75274,7 +75274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499630141}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 77.3, y: -94.7, z: -0.5}
+  m_LocalPosition: {x: 77.3, y: -94.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1598148244}
@@ -100884,7 +100884,7 @@ GameObject:
   - component: {fileID: 1866391411}
   - component: {fileID: 1866391410}
   - component: {fileID: 1866391406}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_A (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102635,7 +102635,7 @@ GameObject:
   - component: {fileID: 1883506441}
   - component: {fileID: 1883506440}
   - component: {fileID: 1883506439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_D (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103336,7 +103336,7 @@ GameObject:
   - component: {fileID: 2084288659}
   - component: {fileID: 2084288658}
   - component: {fileID: 2084288654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105087,7 +105087,7 @@ GameObject:
   - component: {fileID: 2117348866}
   - component: {fileID: 2117348865}
   - component: {fileID: 2117348864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Island_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
