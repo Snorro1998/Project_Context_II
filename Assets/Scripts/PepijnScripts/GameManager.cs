@@ -2,15 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : MonoBehaviour
 {
     //Een goede plek om alle belangijke variables en bools bij te houden.
-    public static bool boatIsMoving;
-    public bool hasVisitedScientist = false;
-    public bool hasVisitedMonster = false;
-    public bool hasVisitedMonster2 = false;
-    public bool hasVisitedBoss = false;
-    public bool hasVisitedCaptain = false;
-    public bool hasVisitedCaptain2 = false;
-    public bool hasVisitedOma = false;
+    public static bool hasVisitedScientist;
+    public static bool hasVisitedMonster;
+    public static bool hasVisitedMonster2;
+    public static bool hasVisitedBoss;
+    public static bool hasVisitedCaptain;
+    public static bool hasVisitedOma;
+    public static bool playMusic;
+    public static GameManager Instance
+    {
+        get;
+        private set;
+    }
+
+    protected virtual void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        hasVisitedScientist = false;
+        hasVisitedMonster = false;
+        hasVisitedMonster2 = false;
+        hasVisitedBoss = false;
+        hasVisitedCaptain = false;
+        hasVisitedOma = false;
+        playMusic = false;
+    }
+    private void Update()
+    {
+    }
 }

@@ -2,58 +2,54 @@ using UnityEngine;
 
 public class PlayerColliderManager : MonoBehaviour
 {
-    GameManager gm;
-
-    private void Start()
-    {
-        gm = GameManager.Instance;
-    }
-
     //All collision taggs
     //Boss
     //Monster
     //Scientist
     //CruiseSchip
+    // Start is called before the first frame update
+    private void Update()
+    {
+        GameManager.playMusic = true;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Scientist" && !gm.hasVisitedScientist)
+        if (collision.tag == "Scientist" && GameManager.hasVisitedScientist == false)
         {
-            gm.hasVisitedScientist = true;
+            Debug.Log("heyhoi");
+            GameManager.hasVisitedScientist = true;
             SaveSystem.Instance.ChangeScene("Scientist");
         }
-
-        if (collision.tag == "CruiseSchip")
+        if (collision.tag == "CruiseSchip" && GameManager.hasVisitedScientist == true)
         {
-            if (gm.hasVisitedScientist && !gm.hasVisitedOma)
-            {
-                gm.hasVisitedOma = true;
-                SaveSystem.Instance.ChangeScene("Oma");
-            }
-            else if (!gm.hasVisitedMonster2)
-            {
-                gm.hasVisitedCaptain = true;
-                SaveSystem.Instance.ChangeScene("Kapitein");
-            }          
+            GameManager.hasVisitedCaptain = true;
+            GameManager.playMusic = false;
+            Debug.Log("helo");
+            SaveSystem.Instance.ChangeScene("Oma");
         }
-
-        if (collision.tag == "Monster")
+        if (collision.tag == "Monster" && GameManager.hasVisitedOma == true)
         {
-            if (gm.hasVisitedOma)
-            {
-                gm.hasVisitedMonster = true;
-                SaveSystem.Instance.ChangeScene("Monster");
-            }
-            else if (gm.hasVisitedBoss)
-            {
-                gm.hasVisitedMonster2 = true;
-                SaveSystem.Instance.ChangeScene("Monster2");
-            }            
+            GameManager.hasVisitedMonster = true;
+            GameManager.playMusic = false;
+            SaveSystem.Instance.ChangeScene("Monster");
         }
-
-        if (collision.tag == "Boss" && gm.hasVisitedMonster)
+        if (collision.tag == "Boss" && GameManager.hasVisitedMonster == true)
         {
-            gm.hasVisitedBoss = true;
+            GameManager.hasVisitedBoss = true;
+            GameManager.playMusic = false;
             SaveSystem.Instance.ChangeScene("Boss");
+        }
+        if (collision.tag == "Monster" && GameManager.hasVisitedBoss == true)
+        {
+            GameManager.hasVisitedMonster2 = true;
+            GameManager.playMusic = false;
+            SaveSystem.Instance.ChangeScene("Monster2");
+        }
+        if (collision.tag == "CruiseSchip" && GameManager.hasVisitedMonster2 == true)
+        {
+            GameManager.hasVisitedCaptain = true;
+            GameManager.playMusic = false;
+            SaveSystem.Instance.ChangeScene("Kapitein");
         }
     }
 }

@@ -26,6 +26,10 @@ public class MainSceneMusic : MonoBehaviour
 
         audioSource.PlayOneShot(main1);
     }
+    private void Start()
+    {
+        Debug.Log("holl!");
+    }
     public void Update()
     {
         if (one) playMusic(1);
