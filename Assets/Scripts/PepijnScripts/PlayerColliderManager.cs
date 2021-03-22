@@ -2,43 +2,58 @@ using UnityEngine;
 
 public class PlayerColliderManager : MonoBehaviour
 {
+    GameManager gm;
+
+    private void Start()
+    {
+        gm = GameManager.Instance;
+    }
+
     //All collision taggs
     //Boss
     //Monster
     //Scientist
     //CruiseSchip
-    // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Scientist" && !GameManager.hasVisitedScientist)
+        if (collision.tag == "Scientist" && !gm.hasVisitedScientist)
         {
-            GameManager.hasVisitedScientist = true;
+            gm.hasVisitedScientist = true;
             SaveSystem.Instance.ChangeScene("Scientist");
         }
-        if (collision.tag == "CruiseSchip" && GameManager.hasVisitedScientist)
+
+        if (collision.tag == "CruiseSchip")
         {
-            GameManager.hasVisitedCaptain = true;
-            SaveSystem.Instance.ChangeScene("Oma");
+            if (gm.hasVisitedScientist && !gm.hasVisitedOma)
+            {
+                gm.hasVisitedOma = true;
+                SaveSystem.Instance.ChangeScene("Oma");
+            }
+            else if (!gm.hasVisitedMonster2)
+            {
+                gm.hasVisitedCaptain = true;
+                SaveSystem.Instance.ChangeScene("Kapitein");
+            }          
         }
-        if (collision.tag == "Monster" && GameManager.hasVisitedOma)
+
+        if (collision.tag == "Monster")
         {
-            GameManager.hasVisitedMonster = true;
-            SaveSystem.Instance.ChangeScene("Monster");
+            if (gm.hasVisitedOma)
+            {
+                gm.hasVisitedMonster = true;
+                SaveSystem.Instance.ChangeScene("Monster");
+            }
+            else if (gm.hasVisitedBoss)
+            {
+                gm.hasVisitedMonster2 = true;
+                SaveSystem.Instance.ChangeScene("Monster2");
+            }            
         }
-        if (collision.tag == "Boss" && GameManager.hasVisitedMonster)
+
+        if (collision.tag == "Boss" && gm.hasVisitedMonster)
         {
-            GameManager.hasVisitedBoss = true;
+            gm.hasVisitedBoss = true;
             SaveSystem.Instance.ChangeScene("Boss");
-        }
-        if (collision.tag == "Monster" && GameManager.hasVisitedBoss)
-        {
-            GameManager.hasVisitedMonster2 = true;
-            SaveSystem.Instance.ChangeScene("Monster2");
-        }
-        if (collision.tag == "CruiseSchip" && !GameManager.hasVisitedMonster2)
-        {
-            GameManager.hasVisitedCaptain = true;
-            SaveSystem.Instance.ChangeScene("Kapitein");
         }
     }
 }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Crewmate
   m_EditorClassIdentifier: 
   myName: Crewmate
-  myPortrait: {fileID: 0}
+  myPortrait: {fileID: 21300000, guid: 74ae546507f90f74e8d7e62d9951c146, type: 3}
   myVoice: {fileID: 0}

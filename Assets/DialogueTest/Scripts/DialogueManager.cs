@@ -73,6 +73,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         DialogueBase.Info info = dialogueInfo.Dequeue();
+        info.startEvent?.Invoke();
         completeText = info.myText;
 
         dialogueName.text = info.character != null ? info.character.myName : null;

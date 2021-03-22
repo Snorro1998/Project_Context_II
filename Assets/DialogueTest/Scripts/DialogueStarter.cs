@@ -5,10 +5,20 @@ using UnityEngine;
 /// <summary>
 /// A test script to initiate a conversation
 /// </summary>
-public class TestScript : MonoBehaviour
+public class DialogueStarter : MonoBehaviour
 {
     public DialogueBase dialogue;
-    public bool hasTriggered = false;
+    public bool playOnStart = false;
+    public bool playOnce = true;
+    private bool hasTriggered = false;
+
+    private void Start()
+    {
+        if (playOnStart)
+        {
+            TriggerDialogue();
+        }
+    }
 
     public void TriggerDialogue()
     {

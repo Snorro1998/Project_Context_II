@@ -14,4 +14,9 @@ public class EventBehaviour : ScriptableObject
     {
         References.instance.DoSomethingBad();
     }
+
+    public void ReturnToMap()
+    {
+        SaveSystem.Instance.ChangeScene("nieuwetestscene");
+    }
 }

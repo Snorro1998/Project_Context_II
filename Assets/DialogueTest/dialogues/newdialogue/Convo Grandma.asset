@@ -17,45 +17,110 @@ MonoBehaviour:
     myText: "\u201CPlayer\u201D \u201CPlayer\u201D, is that you? Oh my days, it is
       you. Sweetheart I haven\u2019t seen you in ages! You\u2019ve grown so big,
       especially in the belly area."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
     myText: "Captain, if I\u2019m not mistaken that\u2019s\u2026 that\u2019s your
       Granny. The years haven\u2019t treated her that well, have they?"
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: Nana??
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
     myText: My child, what brings you to this paradise on earth?
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "We\u2019re conducting research to make a documentary on some mysterious
       events on the ocean."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
     myText: "A documentary you say? Are you allowed to get to work again then? I
       see\u2026 splendid! What are you investigating now? "
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: We found a mysterious trail of dying corals, leading right to this ship.
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
     myText: "Dying corals? I\u2019ve heard about that.. yes. Too bad simple folks
       like me can\u2019t do anything about it."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: Wait, you know about the dying corals? Then why are you on this ship?
       We heard dying corals could have very severe consequences.
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
     myText: "Yeah that crazy scientist guy yelled at this ship. It\u2019s not my
       fault this ship is sailing, is it? If it wouldn\u2019t exist I could never
       have gone on one, could I? The captain is to blame, not me. I\u2019m just enjoying
       the luxury."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "You don\u2019t think you shouldn\u2019t..."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
     myText: "Well well child, I\u2019m gonna get myself a margherita. "
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: But...
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
     myText: "Yes, nice seeing you again too\u2026 Say hi to those parents of yours,
       adieu."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
     myText: "Well she hasn\u2019t changed a bit. Let\u2019s see if the captain could
       tell us more about what\u2019s going on. "
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 0}
     myText: "Statements: The big corporations are to blame for the dying corals,
       consumers wouldn\u2019t be able to make use of cruise ships if the ships didn\u2019t
       exist."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 0}
+    myText: 
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: ReturnToMap
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

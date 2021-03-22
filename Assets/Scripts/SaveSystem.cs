@@ -8,23 +8,22 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class SaveSystem : Singleton<SaveSystem>
 {
-    public KeyCode switchSceneKey = KeyCode.P;
-
     SaveCollection saveCollection;
     private Dictionary<string, GameObject> savedScenes = new Dictionary<string, GameObject>();
-    // Dit is om het te testen
-    private Queue<string> sceneIDs = new Queue<string>();
 
     protected override void Awake()
     {
         base.Awake();
-        sceneIDs.Enqueue("secondScene");
-        sceneIDs.Enqueue("nieuwetestscene");
         SceneManager.sceneLoaded += OnSceneLoaded;
         saveCollection = FindObjectOfType<SaveCollection>();
+        DontDestroyOnLoad(this.gameObject);
     }
 
-    // Wordt aangeroepen als de scene is geladen
+    /// <summary>
+    /// Wordt aangeroepen wanneer de scene geladen is
+    /// </summary>
+    /// <param name="scene"></param>
+    /// <param name="mode"></param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (savedScenes.ContainsKey(scene.name))
@@ -37,8 +36,10 @@ public class SaveSystem : Singleton<SaveSystem>
         }
     }
 
-    // Laadt een andere scene 
-    // Deze moet public zijn
+    /// <summary>
+    /// Laadt de scene met de opgegeven scenenaam
+    /// </summary>
+    /// <param name="sceneToLoad"></param>
     public void ChangeScene(string sceneToLoad)
     {
         string sceneName = SceneManager.GetActiveScene().name;
@@ -56,15 +57,5 @@ public class SaveSystem : Singleton<SaveSystem>
         }
         
         SceneManager.LoadScene(sceneToLoad);
-    }
-
-    private void Update()
-    {        
-        if (Input.GetKeyDown(switchSceneKey))
-        {
-            string id = sceneIDs.Dequeue();
-            sceneIDs.Enqueue(id);
-            ChangeScene(id);
-        }
     }
 }

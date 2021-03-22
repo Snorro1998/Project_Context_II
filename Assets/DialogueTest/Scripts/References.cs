@@ -10,8 +10,8 @@ using UnityEngine.Rendering.Universal;
 public class References : MonoBehaviour
 {
     public static References instance;
-    public Volume postVolum;
-    private ColorAdjustments cols;
+    //public Volume postVolum;
+    //private ColorAdjustments cols;
 
     private void Awake()
     {
@@ -27,16 +27,16 @@ public class References : MonoBehaviour
 
     private void Start()
     {
-        postVolum.profile.TryGet(out cols);
+        //postVolum.profile.TryGet(out cols);
     }
 
     public void DoSomethingGood()
     {
-        cols.saturation.value = 0;
+        //cols.saturation.value = 0;
     }
 
     public void DoSomethingBad()
     {
-        cols.saturation.value = -100;
+        //cols.saturation.value = -100;
     }
 }
