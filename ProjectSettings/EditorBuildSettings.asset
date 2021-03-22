@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Korte Scenes/Boss.unity
     guid: 4b0750567f10ab54182a667b118c5120
   - enabled: 1
-    path: Assets/Scenes/Korte Scenes/Artikel.unity
+    path: Assets/Scenes/Korte Scenes/Reflectie.unity
     guid: c8f627eb22356e14ca75e895d47e7c2d
   m_configObjects: {}

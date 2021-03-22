@@ -29,7 +29,9 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+    }
+    private void Start()
+    {
         hasVisitedScientist = false;
         hasVisitedMonster = false;
         hasVisitedMonster2 = false;
@@ -40,5 +42,9 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        if(hasVisitedScientist == true)
+        {
+            Debug.Log("wtf");
+        }
     }
 }
