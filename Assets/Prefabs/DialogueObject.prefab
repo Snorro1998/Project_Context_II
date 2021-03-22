@@ -383,7 +383,7 @@ MonoBehaviour:
   dialogueName: {fileID: 5839225068906927893}
   dialogueText: {fileID: 5839225068055141961}
   dialoguePortrait: {fileID: 5839225068988531679}
-  delay: 0.05
+  delay: 0.01
   dialogueOptionUI: {fileID: 5839225069575230045}
   inDialogue: 0
   optionButtons:
@@ -515,7 +515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec5fea48c6344b4b8a2a72b7f8bb545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  postVolum: {fileID: 0}
 --- !u!1 &5839225068195398412
 GameObject:
   m_ObjectHideFlags: 0
