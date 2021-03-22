@@ -50,7 +50,7 @@ public class PlayerColliderManager : MonoBehaviour
         {
             GameManager.hasVisitedCaptain = true;
             musicAllowed = true;
-            MainSceneMusic.two = true;
+
             musicInt = 2;
             MainSceneMusic.stopMusic();
             SaveSystem.Instance.ChangeScene("Oma");
@@ -65,7 +65,6 @@ public class PlayerColliderManager : MonoBehaviour
         if (collision.tag == "Boss" && GameManager.hasVisitedMonster == true)
         {
             GameManager.hasVisitedBoss = true;
-            MainSceneMusic.three = true;
             musicInt = 3;
             musicAllowed = true;
             MainSceneMusic.stopMusic();

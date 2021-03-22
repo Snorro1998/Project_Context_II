@@ -8,10 +8,10 @@ public class MainSceneMusic : MonoBehaviour
     public static AudioClip main2;
     public static AudioClip main3;
     static AudioSource audioSource;
-    public static bool one;
-    public static bool two;
-    public static bool three;
-    public static bool stop;
+    public bool one;
+    public bool two;
+    public bool three;
+    public bool stop;
     void Awake()
     {
         one = false;
