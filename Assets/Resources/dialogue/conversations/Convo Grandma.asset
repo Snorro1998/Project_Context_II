@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
-    myText: "\u201CPlayer\u201D \u201CPlayer\u201D, is that you? Oh my days, it is
-      you. Sweetheart I haven\u2019t seen you in ages! You\u2019ve grown so big,
-      especially in the belly area."
+    myText: "\u201C{PLAYER}\u201D \u201C{PLAYER}\u201D, is that you? Oh my days,
+      it is you. Sweetheart I haven\u2019t seen you in ages! You\u2019ve grown so
+      big, especially in the belly area."
     startEvent:
       m_PersistentCalls:
         m_Calls: []

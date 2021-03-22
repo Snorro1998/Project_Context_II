@@ -19,6 +19,21 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        var files = Resources.LoadAll("dialogue/characters", typeof(CharacterProfile));
+        foreach (object o in files)
+        {
+            CharacterProfile prof = o as CharacterProfile;
+
+            if (prof != null)
+            {
+                Debug.Log("adding: " + prof.name.ToLower() + ", " + prof.myName);
+                characterNames.Add(prof.name.ToLower(), prof.myName);
+            }
+        }
+    }
+
     public GameObject dialogueBox;
 
     public Text dialogueName;
@@ -37,6 +52,8 @@ public class DialogueManager : MonoBehaviour
 
     private bool isCurrentlyTyping;
     private string completeText;
+
+    private Dictionary<string, string> characterNames = new Dictionary<string, string>();
 
     public void EnqueueDialogue(DialogueBase db)
     {
@@ -74,7 +91,7 @@ public class DialogueManager : MonoBehaviour
 
         DialogueBase.Info info = dialogueInfo.Dequeue();
         info.startEvent?.Invoke();
-        completeText = info.myText;
+        //completeText = info.myText;
 
         dialogueName.text = info.character != null ? info.character.myName : null;
         //dialogueName.text = info.character.myName;
@@ -87,10 +104,48 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeText(info));
     }
 
+    private string GetName(string inputName)
+    {
+        string name = inputName.Substring(1, inputName.Length - 2).ToLower();
+        if (characterNames.ContainsKey(name))
+        {
+            name = characterNames[name];
+        }
+        return name;
+    }
+
+    private string ParseNames(string sentence)
+    {
+        var tmpSentence = sentence;
+        //zal wel meer dan genoeg zijn en niet unity compleet laten crashen zoals een onjuiste whileloop
+        for (int i = 0; i < 50; i++)
+        {
+            var openingBracketPos = sentence.IndexOf("{");
+            var closingBracketPos = sentence.IndexOf("}");
+
+            if (closingBracketPos > openingBracketPos && openingBracketPos != -1)
+            {
+                var name = sentence.Substring(openingBracketPos, closingBracketPos - openingBracketPos + 1);
+                var realname = GetName(name);
+                tmpSentence = tmpSentence.Replace(name, realname);
+            }
+            else
+            {
+                break;
+            }
+        }
+        
+
+        return tmpSentence;
+    }
+
     IEnumerator TypeText(DialogueBase.Info info)
     {
         isCurrentlyTyping = true;
-        foreach(char c in info.myText.ToCharArray())
+        var txt = ParseNames(info.myText);
+        completeText = txt;
+
+        foreach (char c in txt.ToCharArray())
         {
             yield return new WaitForSeconds(delay);
             dialogueText.text += c;
