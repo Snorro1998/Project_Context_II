@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public static bool hasVisitedBoss;
     public static bool hasVisitedCaptain;
     public static bool hasVisitedOma;
-    public static bool playMusic;
     public static GameManager Instance
     {
         get;
@@ -38,7 +37,6 @@ public class GameManager : MonoBehaviour
         hasVisitedBoss = false;
         hasVisitedCaptain = false;
         hasVisitedOma = false;
-        playMusic = false;
     }
     private void Update()
     {

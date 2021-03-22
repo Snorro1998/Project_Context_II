@@ -8,10 +8,10 @@ public class MainSceneMusic : MonoBehaviour
     public static AudioClip main2;
     public static AudioClip main3;
     static AudioSource audioSource;
-    public bool one;
-    public bool two;
-    public bool three;
-    public bool stop;
+    public static bool one;
+    public static bool two;
+    public static bool three;
+    public static bool stop;
     void Awake()
     {
         one = false;
@@ -21,20 +21,32 @@ public class MainSceneMusic : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         main1 = Resources.Load<AudioClip>("Main1");
-        main1 = Resources.Load<AudioClip>("Main2");
-        main1 = Resources.Load<AudioClip>("Main3");
-
-        audioSource.PlayOneShot(main1);
+        main2 = Resources.Load<AudioClip>("Main2");
+        main3 = Resources.Load<AudioClip>("Main3");
     }
     private void Start()
     {
+        audioSource.PlayOneShot(main1);
         Debug.Log("holl!");
     }
     public void Update()
     {
-        if (one) playMusic(1);
-        if (two) playMusic(2);
-        if (three) playMusic(3);
+        if (one)
+        {
+            playMusic(1);
+            one = false;
+        }
+        if (two)
+        {
+            playMusic(2);
+            two = false;
+        }
+        if (three)
+        {
+            playMusic(3);
+            three = false;
+        }
+
         if (stop) stopMusic();
     }
     public static void playMusic(int layers)
