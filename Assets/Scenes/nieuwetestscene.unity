@@ -7433,7 +7433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPos: {fileID: 1226295483}
   maxCameraDistance: 2.5
-  moveSpeed: 30
+  moveSpeed: 3
 --- !u!82 &352856032
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14146,6 +14146,7 @@ Transform:
   - {fileID: 1933797902}
   - {fileID: 452799155}
   - {fileID: 355165739}
+  - {fileID: 1256259759}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24613,7 +24614,6 @@ GameObject:
   m_Component:
   - component: {fileID: 737737823}
   - component: {fileID: 737737826}
-  - component: {fileID: 737737825}
   - component: {fileID: 737737824}
   m_Layer: 0
   m_Name: BoatRotationPoint
@@ -24652,21 +24652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02418075182a68643ba1a8e05674313e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &737737825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737737822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ca2154ed5f86ed45b58cc583104671f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boatSprite: {fileID: 1448687954}
-  frontParticleSystems:
-  - {fileID: 740257041}
 --- !u!114 &737737826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65801,7 +65786,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1172776104}
   - component: {fileID: 1172776106}
-  - component: {fileID: 1172776107}
   - component: {fileID: 1172776105}
   m_Layer: 0
   m_Name: BoatRotationPoint
@@ -65868,22 +65852,6 @@ MonoBehaviour:
   xAxis: 0
   yAxis: 0
   zAxis: 1
---- !u!114 &1172776107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172776103}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ca2154ed5f86ed45b58cc583104671f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boatSprite: {fileID: 726295053}
-  frontParticleSystems:
-  - {fileID: 894682592}
-  - {fileID: 626994850}
 --- !u!1 &1181262442
 GameObject:
   m_ObjectHideFlags: 0
@@ -71052,7 +71020,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 30
+  maxSpeed: 3
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -71411,7 +71379,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1242808453
 PrefabInstance:
@@ -71643,7 +71611,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256259756}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -50.72, y: 41.58, z: 0}
   m_LocalScale: {x: 2.7137, y: 2.7137, z: 2.7137}
   m_Children:
@@ -71651,8 +71619,8 @@ Transform:
   - {fileID: 712666671}
   - {fileID: 1749881292}
   - {fileID: 1857333077}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 626052002}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1270890304
 GameObject:
@@ -88669,7 +88637,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1665656566
 GameObject:
