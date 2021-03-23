@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Grandma
   m_EditorClassIdentifier: 
   myName: Grandma
-  myPortrait: {fileID: 0}
+  myPortrait: {fileID: 21300000, guid: 44b8c311f266ee44bbfb6c4bed9384e9, type: 3}
   myVoice: {fileID: 0}

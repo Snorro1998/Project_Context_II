@@ -10,6 +10,12 @@ public class SaveSystem : Singleton<SaveSystem>
 {
     SaveCollection saveCollection;
     private Dictionary<string, GameObject> savedScenes = new Dictionary<string, GameObject>();
+    private string nextScene;
+
+    public Dictionary<string, string> roomNames = new Dictionary<string, string>()
+    {
+        {"prologue", "BossStart" }
+    };
 
     protected override void Awake()
     {
@@ -34,6 +40,8 @@ public class SaveSystem : Singleton<SaveSystem>
             SceneManager.MoveGameObjectToScene(save, SceneManager.GetActiveScene());
             save.SetActive(true);
         }
+        /*if (LevelChanger.Instance != null)*/ LevelChanger.Instance?.FadeIn();
+        BGMusic.Instance?.UpdateMusic();
     }
 
     /// <summary>
@@ -42,6 +50,14 @@ public class SaveSystem : Singleton<SaveSystem>
     /// <param name="sceneToLoad"></param>
     public void ChangeScene(string sceneToLoad)
     {
+        Debug.Log("ChangeScene");
+        nextScene = sceneToLoad;
+        LevelChanger.Instance.FadeOut();        
+    }
+
+    public void ChangeSceneP2()
+    {
+        Debug.Log("ChangeSceneP2");
         string sceneName = SceneManager.GetActiveScene().name;
 
         saveCollection = FindObjectOfType<SaveCollection>();
@@ -55,7 +71,7 @@ public class SaveSystem : Singleton<SaveSystem>
                 savedScenes.Add(sceneName, saveCollection.gameObject);
             }
         }
-        
-        SceneManager.LoadScene(sceneToLoad);
+
+        SceneManager.LoadScene(nextScene);
     }
 }

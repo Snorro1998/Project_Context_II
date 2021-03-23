@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
 
             if (prof != null)
             {
-                Debug.Log("adding: " + prof.name.ToLower() + ", " + prof.myName);
+                //Debug.Log("adding: " + prof.name.ToLower() + ", " + prof.myName);
                 characterNames.Add(prof.name.ToLower(), prof.myName);
             }
         }

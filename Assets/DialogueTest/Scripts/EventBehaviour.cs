@@ -15,6 +15,11 @@ public class EventBehaviour : ScriptableObject
         References.instance.DoSomethingBad();
     }
 
+    public void GotoStartGameScene()
+    {
+        SaveSystem.Instance.ChangeScene("2 StartGame");
+    }
+
     public void ReturnToMap()
     {
         SaveSystem.Instance.ChangeScene("nieuwetestscene");

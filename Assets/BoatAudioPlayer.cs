@@ -8,6 +8,7 @@ public class BoatAudioPlayer : MonoBehaviour
     private List<AudioClip> sndsHorn = new List<AudioClip>();
     private AudioSource asEngine;
     private AudioSource asHorn;
+    public int possibility = 500;
 
     public enum ShipType
     {
@@ -58,7 +59,7 @@ public class BoatAudioPlayer : MonoBehaviour
 
     private void FixedUpdate()
     {      
-        if (Random.Range(0, 300) == 0 && !asHorn.isPlaying)
+        if (Random.Range(0, possibility) == 0 && !asHorn.isPlaying)
         {
             asHorn.clip = sndsHorn[Random.Range(0, sndsHorn.Count)];
             asHorn.Play();

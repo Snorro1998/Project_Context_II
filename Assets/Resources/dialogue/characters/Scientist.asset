@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Scientist
   m_EditorClassIdentifier: 
   myName: Scientist
-  myPortrait: {fileID: 21300000, guid: b61f2e750dc990d4e9c124bd5fc9fe63, type: 3}
+  myPortrait: {fileID: 21300000, guid: 34cc626841c25e94a8fa99c85510074e, type: 3}
   myVoice: {fileID: 0}

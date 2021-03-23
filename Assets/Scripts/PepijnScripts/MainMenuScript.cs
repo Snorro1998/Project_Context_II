@@ -5,6 +5,7 @@ public class MainMenuScript : MonoBehaviour
 {
     public static AudioClip mainMenuTheme;
     static AudioSource audioSource;
+    /*
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -13,11 +14,12 @@ public class MainMenuScript : MonoBehaviour
     private void Start()
     {
         audioSource.PlayOneShot(mainMenuTheme);
-    }
+    }*/
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
-        audioSource.Stop();
+        SaveSystem.Instance.ChangeScene("1 BossStart");
+        //audioSource.Stop();
+        //SceneManager.LoadScene(1);
     }
     public void QuitGame()
     {

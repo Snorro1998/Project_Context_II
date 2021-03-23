@@ -44,7 +44,7 @@ public class PlayerColliderManager : MonoBehaviour
             musicAllowed = true;
             MainSceneMusic.stopMusic();
 
-            SaveSystem.Instance.ChangeScene("Scientist");
+            SaveSystem.Instance.ChangeScene("3 Scientist");
         }
         if (collision.tag == "CruiseSchip" && GameManager.hasVisitedScientist == true)
         {
