@@ -99,7 +99,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: ReturnToMap
+          m_MethodName: GotoReflect1Scene
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

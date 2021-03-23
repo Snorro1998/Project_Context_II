@@ -52,7 +52,15 @@ public class SaveSystem : Singleton<SaveSystem>
     {
         Debug.Log("ChangeScene");
         nextScene = sceneToLoad;
-        LevelChanger.Instance.FadeOut();        
+        if (LevelChanger.Instance != null)
+        {
+            LevelChanger.Instance.FadeOut();
+        }
+        else
+        {
+            ChangeSceneP2();
+        }
+               
     }
 
     public void ChangeSceneP2()

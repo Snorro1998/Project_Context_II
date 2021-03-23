@@ -20,6 +20,11 @@ public class EventBehaviour : ScriptableObject
         SaveSystem.Instance.ChangeScene("2 StartGame");
     }
 
+    public void GotoReflect1Scene()
+    {
+        SaveSystem.Instance.ChangeScene("reflect1");
+    }
+
     public void ReturnToMap()
     {
         SaveSystem.Instance.ChangeScene("nieuwetestscene");

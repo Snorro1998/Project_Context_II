@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Korte Scenes/2 StartGame.unity
     guid: cbced2fda3abfe24db986d1b01620642
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/reflect1.unity
+    guid: 65f841c48aa922e4cb4e16f4933dda93
   m_configObjects: {}

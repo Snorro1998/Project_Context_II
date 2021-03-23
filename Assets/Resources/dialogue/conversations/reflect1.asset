@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: reflect1
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 0}
+    myText: '"Scientific knowledge says dying corals can have severe consequences
+      and things have to change."'
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Hmm that scientist was quite serious about the dying corals. That poor
+      man. I wonder why nobody wants to listen to him. He seemed legit. I also wonder
+      what it is he is so afraid of. Could the dying corals really provoke such devastation,
+      or is there something else at play? Something bigger? And what about those
+      mysterious polyps? They will help me, but won\u2019t solve anything? What does
+      that mean? I guess we have no choice but to keep going and find more clues."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 0}
+    myText: 
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: ReturnToMap
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
