@@ -101,6 +101,9 @@ public class DialogueManager : MonoBehaviour
         dialoguePortrait.gameObject.SetActive(dialoguePortrait.sprite == null ? false : true);
 
         dialogueText.text = "";
+
+        dialogueBox.SetActive(!(info.myText == ""));
+
         StartCoroutine(TypeText(info));
     }
 

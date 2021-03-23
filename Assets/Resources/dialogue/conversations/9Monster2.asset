@@ -14,20 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
-    myText: '*SHRIEK'
+    myText: GRRRRRRRRRRR!
     startEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: PlayMonsterSound1
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
     myText: 'There it is again! '
     startEvent:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
-    myText: '*Wailing'
+    myText: GRAAAAAAAAAAH!
     startEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: PlayMonsterSound2
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "I don\u2019t think it wants to hurt anybody, look at it. It\u2019s covered
       with the dead corals."
@@ -41,10 +65,22 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
-    myText: '*Wailing'
+    myText: GRRRRRRRRRRR!
     startEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: PlayMonsterSound1
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: 'It must have something to do with the cruise ship. I think the smoke
       that came out of the funnel must somehow have hurt it. '
@@ -71,9 +107,9 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
-    myText: '*murmurs: that would serve my grandma right. Uhh.. I mean, we could
-      also ask our new friend here to come with us. He might be able to intimidate
-      the captain just enough to squeeze a statement out of there.'
+    myText: That would serve my grandma right. Uhh.. I mean, we could also ask our
+      new friend here to come with us. He might be able to intimidate the captain
+      just enough to squeeze a statement out of there.
     startEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -88,7 +124,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
-    myText: SHRIEK
+    myText: GRRRRR!
     startEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -97,7 +133,19 @@ MonoBehaviour:
       somehow?
     startEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: PlayMonsterSound2
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: Wait, I got an idea, do you still got that jar from the scientist?
     startEvent:
@@ -114,10 +162,22 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
-    myText: Curious shriek
+    myText: GRAAH?
     startEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: PlayMonsterSound1
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "Look, it\u2019s interested in the colours. "
     startEvent:

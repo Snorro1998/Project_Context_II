@@ -75,8 +75,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 8194aa6a184a67f4f9c9d1d7b9cfe625, type: 2}
-    myText: "Here take this with you. *(hands over polyps) They are coloured polyps.
-      They will help you, but won\u2019t solve anything."
+    myText: "Here take this with you. They are coloured polyps. They will help you,
+      but won\u2019t solve anything."
     startEvent:
       m_PersistentCalls:
         m_Calls: []

@@ -79,4 +79,14 @@ public class EventBehaviour : ScriptableObject
     {
         SaveSystem.Instance.ChangeScene("credits");
     }
+
+    public void PlayMonsterSound1()
+    {
+        BGMusic.Instance.PlayMonsterSound1();
+    }
+
+    public void PlayMonsterSound2()
+    {
+        BGMusic.Instance.PlayMonsterSound2();
+    }
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
-  m_Name: Convo Teaser
+  m_Name: 12Teaser
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
