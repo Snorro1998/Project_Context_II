@@ -68,27 +68,27 @@ public class PlayerColliderManager : MonoBehaviour
             MainSceneMusic.Instance.stopMusic();
             SaveSystem.Instance.ChangeScene("7 Monster");
         }
-        if (collision.tag == "Boss" && GameManager.Instance.hasVisitedMonster == true)
+        if (collision.tag == "Boss" && GameManager.Instance.hasVisitedMonster == true && !GameManager.Instance.hasVisitedBoss)
         {
             GameManager.Instance.hasVisitedBoss = true;
             musicInt = 3;
             musicAllowed = true;
             MainSceneMusic.Instance.stopMusic();
-            SaveSystem.Instance.ChangeScene("Boss");
+            SaveSystem.Instance.ChangeScene("8 Boss");
         }
-        if (collision.tag == "Monster" && GameManager.Instance.hasVisitedBoss == true)
+        if (collision.tag == "Monster" && GameManager.Instance.hasVisitedBoss == true && !GameManager.Instance.hasVisitedMonster2)
         {
             GameManager.Instance.hasVisitedMonster2 = true;
             musicAllowed = true;
             MainSceneMusic.Instance.stopMusic();
-            SaveSystem.Instance.ChangeScene("Monster2");
+            SaveSystem.Instance.ChangeScene("9 Monster2");
         }
         if (collision.tag == "CruiseSchip" && GameManager.Instance.hasVisitedMonster2 == true)
         {
             GameManager.Instance.hasVisitedCaptain = true;
             musicAllowed = true;
             MainSceneMusic.Instance.stopMusic();
-            SaveSystem.Instance.ChangeScene("Kapitein");
+            SaveSystem.Instance.ChangeScene("10 Cruise2");
         }
     }
 }

@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Korte Scenes/3 Scientist.unity
     guid: e50b7dfc9288afa4486999538bcf929d
   - enabled: 1
-    path: Assets/Scenes/Korte Scenes/Boss.unity
+    path: Assets/Scenes/Korte Scenes/8 Boss.unity
     guid: 4b0750567f10ab54182a667b118c5120
   - enabled: 1
     path: Assets/Scenes/Korte Scenes/Reflectie.unity
@@ -59,4 +59,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Korte Scenes/eval2.unity
     guid: 2476363585d2c6e4baf13ae56ba2dada
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/9 Monster2.unity
+    guid: 3160143be597f4b459b4f8231d23694f
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/10 Cruise2.unity
+    guid: c4c733a6b863d3b43a40af6018efcdd0
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/eval4.unity
+    guid: 085a8b26c2154644ab8bead6519c0110
   m_configObjects: {}

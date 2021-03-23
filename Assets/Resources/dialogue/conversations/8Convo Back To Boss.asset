@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
+  m_Name: 8Convo Back To Boss
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "What? You\u2019re back already? You better found something useful."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Uhm, about that\u2026"
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: What are you trying to tell me, kid?
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Well, we need another\u2026"
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "The bureau sent us! They told us you got orders to give us the electric
+      boat, but you ignored them. They sounded furious! You didn\u2019t get the message?"
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "Uh, I didn\u2019t\u2026"
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Oh no, you are in big trouble now, mister. If I were you I would hand
+      us the keys of the electric boat immediately. They told us the big boss herself
+      is coming to check whether you provided us the right boat. And you know how
+      the big boss reacts when her orders aren\u2019t obeyed. "
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
+    myText: "Oh... uh\u2026 alright then. Here are the keys. Just make sure you get
+      out of here right away. Last time she was mad at me I\u2026 I\u2026 I wet myself.
+      Oops, you didn\u2019t hear that. Now beat it, you scum."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Well, that went well. Let\u2019s hurry before he finds out we were bluffing."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "That\u2019s why I\u2019ve never lost a game of poker in my life."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 0}
+    myText: 
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: ReturnToMap
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

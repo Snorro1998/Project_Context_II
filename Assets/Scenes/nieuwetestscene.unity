@@ -6727,11 +6727,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 20
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 896
+    m_Bits: 768
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 8f5e040a6097ba747843a5ec7e42a6a2, type: 2}
   m_TargetDisplay: 0
@@ -7542,6 +7542,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2de8a728d340a247bb3f39ea98a1767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &355165738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355165739}
+  - component: {fileID: 355165741}
+  - component: {fileID: 355165740}
+  m_Layer: 0
+  m_Name: mng
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &355165739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355165738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 626052002}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &355165740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355165738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded273a0e06a96842b807096d230153b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleObject: {fileID: 1270890304}
+--- !u!114 &355165741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355165738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86055cad99fd91a4c9240730b1b06d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapToggleKey: 109
+  fullScreenMap: {fileID: 1215157382}
+  mapMode: 0
 --- !u!1 &368142967
 GameObject:
   m_ObjectHideFlags: 0
@@ -13899,7 +13959,6 @@ MonoBehaviour:
   hasVisitedCaptain: 0
   hasVisitedOma: 0
   musicInt: 0
-  hasElectricBoat: 0
 --- !u!4 &593175948
 Transform:
   m_ObjectHideFlags: 0
@@ -14086,6 +14145,7 @@ Transform:
   - {fileID: 240178840}
   - {fileID: 1933797902}
   - {fileID: 452799155}
+  - {fileID: 355165739}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -83043,7 +83103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1509922161}
   - component: {fileID: 1509922162}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoatSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99054,8 +99114,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1790154377}
-  - component: {fileID: 1790154376}
-  - component: {fileID: 1790154378}
   - component: {fileID: 1790154379}
   - component: {fileID: 1790154383}
   - component: {fileID: 1790154382}
@@ -99068,21 +99126,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1790154376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790154375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86055cad99fd91a4c9240730b1b06d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapToggleKey: 109
-  fullScreenMap: {fileID: 1215157382}
-  mapMode: 0
 --- !u!4 &1790154377
 Transform:
   m_ObjectHideFlags: 0
@@ -99097,19 +99140,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1790154378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790154375}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ded273a0e06a96842b807096d230153b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleObject: {fileID: 1270890304}
 --- !u!114 &1790154379
 MonoBehaviour:
   m_ObjectHideFlags: 0

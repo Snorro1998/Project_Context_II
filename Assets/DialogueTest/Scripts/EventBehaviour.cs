@@ -50,6 +50,11 @@ public class EventBehaviour : ScriptableObject
         SaveSystem.Instance.ChangeScene("eval3");
     }
 
+    public void GotoEval4Scene()
+    {
+        SaveSystem.Instance.ChangeScene("eval4");
+    }
+
     public void ReturnToMap()
     {
         SaveSystem.Instance.ChangeScene("nieuwetestscene");
