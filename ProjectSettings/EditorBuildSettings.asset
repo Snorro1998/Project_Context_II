@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Korte Scenes/12 Teaser.unity
     guid: 0a76a3efc7cf92f42a0bca657d5c23af
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/1_1 BottleScene.unity
+    guid: f51780121f715604fb0304438b6e8f29
   m_configObjects: {}

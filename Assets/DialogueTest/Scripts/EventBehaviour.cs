@@ -89,4 +89,9 @@ public class EventBehaviour : ScriptableObject
     {
         BGMusic.Instance.PlayMonsterSound2();
     }
+
+    public void GotoBottleScene()
+    {
+        SaveSystem.Instance.ChangeScene("1_1 BottleScene");
+    }
 }
