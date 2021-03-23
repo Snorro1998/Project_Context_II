@@ -68,4 +68,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Korte Scenes/eval4.unity
     guid: 085a8b26c2154644ab8bead6519c0110
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/11 Endscene.unity
+    guid: fc30bcf1964cb6742ae1a44802274c29
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/12 Teaser.unity
+    guid: 0a76a3efc7cf92f42a0bca657d5c23af
   m_configObjects: {}

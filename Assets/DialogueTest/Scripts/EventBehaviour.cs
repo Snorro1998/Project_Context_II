@@ -55,8 +55,28 @@ public class EventBehaviour : ScriptableObject
         SaveSystem.Instance.ChangeScene("eval4");
     }
 
+    public void GotoEndScene()
+    {
+        SaveSystem.Instance.ChangeScene("11 Endscene");
+    }
+
     public void ReturnToMap()
     {
         SaveSystem.Instance.ChangeScene("nieuwetestscene");
+    }
+
+    public void GotoCredits()
+    {
+        SaveSystem.Instance.ChangeScene("credits");
+    }
+
+    public void GotoMainMenu()
+    {
+        SaveSystem.Instance.ChangeScene("MainMenu");
+    }
+
+    public void GotoTeaser()
+    {
+        SaveSystem.Instance.ChangeScene("credits");
     }
 }
