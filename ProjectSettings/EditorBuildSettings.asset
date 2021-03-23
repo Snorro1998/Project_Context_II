@@ -12,16 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/nieuwetestscene.unity
     guid: 28412e27f2394df4693c1eae5d414923
   - enabled: 1
-    path: Assets/Scenes/Korte Scenes/Kapitein.unity
+    path: Assets/Scenes/Korte Scenes/6 Captain.unity
     guid: 1b0149a5d9f262e4dad00678505b2db6
   - enabled: 1
-    path: Assets/Scenes/Korte Scenes/Monster.unity
+    path: Assets/Scenes/Korte Scenes/7 Monster.unity
     guid: 92439c16ad374dd469e2911948f50d38
   - enabled: 1
     path: Assets/Scenes/Korte Scenes/MonsterMetCruiseSchip.unity
     guid: 7698059f267be44459b8fd475755e1fd
   - enabled: 1
-    path: Assets/Scenes/Korte Scenes/Oma.unity
+    path: Assets/Scenes/Korte Scenes/5 Grandma.unity
     guid: ed26ac7e71d1611498abdb50e996fc67
   - enabled: 1
     path: Assets/Scenes/Korte Scenes/3 Scientist.unity
@@ -45,6 +45,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Korte Scenes/2 StartGame.unity
     guid: cbced2fda3abfe24db986d1b01620642
   - enabled: 1
-    path: Assets/Scenes/Korte Scenes/reflect1.unity
+    path: Assets/Scenes/Korte Scenes/reflect2.unity
     guid: 65f841c48aa922e4cb4e16f4933dda93
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/4 Cruise.unity
+    guid: 0f822ef7546f29940983d2114a9640d6
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/reflect1.unity
+    guid: 5cb7c2cda16e0834a8c328f6da9ca383
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/eval3.unity
+    guid: 1d6797b93785e074f9cde00a142da898
+  - enabled: 1
+    path: Assets/Scenes/Korte Scenes/eval2.unity
+    guid: 2476363585d2c6e4baf13ae56ba2dada
   m_configObjects: {}

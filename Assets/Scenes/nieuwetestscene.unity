@@ -7433,7 +7433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPos: {fileID: 1226295483}
   maxCameraDistance: 2.5
-  moveSpeed: 3
+  moveSpeed: 30
 --- !u!82 &352856032
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7537,15 +7537,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352856026}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2de8a728d340a247bb3f39ea98a1767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  one: 0
-  two: 0
-  three: 0
-  stop: 0
 --- !u!1 &368142967
 GameObject:
   m_ObjectHideFlags: 0
@@ -13896,6 +13892,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4858c6a6eb9f1488dbd3f21c5f419a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasVisitedScientist: 0
+  hasVisitedMonster: 0
+  hasVisitedMonster2: 0
+  hasVisitedBoss: 0
+  hasVisitedCaptain: 0
+  hasVisitedOma: 0
+  musicInt: 0
+  hasElectricBoat: 0
 --- !u!4 &593175948
 Transform:
   m_ObjectHideFlags: 0
@@ -70988,7 +70992,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 30
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -77281,7 +77285,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.3289833, y: -0.09676075}
@@ -88591,7 +88595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c04a774069ad56b4b9791ad95ae87018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: 8fb3b353b2a8cac4e81bae2a31f3a18b, type: 3}
+  music: {fileID: 0}
   musicLoop: 1
 --- !u!4 &1645788590
 Transform:

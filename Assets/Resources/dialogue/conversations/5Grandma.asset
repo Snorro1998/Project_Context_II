@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
-  m_Name: Convo Grandma
+  m_Name: 5Grandma
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
@@ -101,20 +101,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 0}
-    myText: "Statements: The big corporations are to blame for the dying corals,
-      consumers wouldn\u2019t be able to make use of cruise ships if the ships didn\u2019t
-      exist."
-    startEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - character: {fileID: 0}
     myText: 
     startEvent:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: ReturnToMap
+          m_MethodName: GotoReflect2Scene
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

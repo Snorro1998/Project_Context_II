@@ -14,8 +14,7 @@ public class BGMusic : Singleton<BGMusic>
     }
 
     private void Start()
-    {
-        
+    {       
         UpdateMusic();
     }
 
@@ -29,7 +28,7 @@ public class BGMusic : Singleton<BGMusic>
                 musicPlayer.Stop();
                 musicPlayer.clip = rmSettings.music;
                 musicPlayer.loop = rmSettings.musicLoop;
-                musicPlayer.Play();
+                if (musicPlayer.clip != null) musicPlayer.Play();
             }
         }
         

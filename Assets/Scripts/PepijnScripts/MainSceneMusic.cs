@@ -2,35 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainSceneMusic : MonoBehaviour
+public class MainSceneMusic : Singleton<MainSceneMusic>
 {
-    public static AudioClip main1;
-    public static AudioClip main2;
-    public static AudioClip main3;
-    static AudioSource audioSource;
-    public bool one;
-    public bool two;
-    public bool three;
-    public bool stop;
-    void Awake()
-    {
-        one = false;
-        two = false;
-        three = false;
-        stop = false;
+    private AudioSource channel1;
+    private AudioSource channel2;
+    private AudioSource channel3;
 
-        audioSource = GetComponent<AudioSource>();
-        main1 = Resources.Load<AudioClip>("Main1");
-        main2 = Resources.Load<AudioClip>("Main2");
-        main3 = Resources.Load<AudioClip>("Main3");
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        channel1 = gameObject.AddComponent<AudioSource>();
+        channel2 = gameObject.AddComponent<AudioSource>();
+        channel3 = gameObject.AddComponent<AudioSource>();
+
+        channel1.clip = Resources.Load<AudioClip>("Main1");
+        channel2.clip = Resources.Load<AudioClip>("Main2");
+        channel3.clip = Resources.Load<AudioClip>("Main3");
     }
     private void Start()
     {
-        audioSource.PlayOneShot(main1);
-        Debug.Log("holl!");
+        switch(GameManager.Instance.musicInt)
+        {
+            default:
+                channel1.Play();
+                break;
+            case 2:
+                channel1.Play();
+                channel2.Play();
+                break;
+            case 3:
+                channel1.Play();
+                channel2.Play();
+                channel3.Play();
+                break;
+
+        }
     }
     public void Update()
     {
+        /*
         if (one)
         {
             playMusic(1);
@@ -48,27 +60,33 @@ public class MainSceneMusic : MonoBehaviour
         }
 
         if (stop) stopMusic();
+        */
     }
-    public static void playMusic(int layers)
+    public void playMusic(int layers)
     {
-        if(layers == 1)
+        /*
+        aud = GetComponent<AudioSource>();
+        if (layers == 1)
         {
-            audioSource.PlayOneShot(main1);
+            aud.PlayOneShot(Resources.Load<AudioClip>("Main1"));
         }
         else if(layers == 2)
         {
-            audioSource.PlayOneShot(main1);
-            audioSource.PlayOneShot(main2);
+            aud.PlayOneShot(Resources.Load<AudioClip>("Main1"));
+            aud.PlayOneShot(Resources.Load<AudioClip>("Main2"));
         }
         else if (layers == 3)
         {
-            audioSource.PlayOneShot(main1);
-            audioSource.PlayOneShot(main2);
-            audioSource.PlayOneShot(main3);
+            aud.PlayOneShot(Resources.Load<AudioClip>("Main1"));
+            aud.PlayOneShot(Resources.Load<AudioClip>("Main2"));
+            aud.PlayOneShot(Resources.Load<AudioClip>("Main3"));
         }
+        */
     }
-    public static void stopMusic()
+    public void stopMusic()
     {
-            audioSource.Stop();
+        channel1.Stop();
+        channel2.Stop();
+        channel3.Stop();
     }
 }

@@ -41,7 +41,7 @@ public class MonsterPathMover : MonoBehaviour
     {
         //werkt niet goed
         //if (pathFinder.remainingDistance < remainingDistanceForNext)
-        if (GameManager.hasVisitedBoss)
+        if (GameManager.Instance.hasVisitedBoss)
         {
             destinationSetter.target = player;
         }

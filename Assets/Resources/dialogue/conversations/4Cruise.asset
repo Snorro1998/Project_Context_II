@@ -10,12 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
-  m_Name: Convo Cruise
+  m_Name: 4Cruise
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
     myText: "Oh my, it\u2019s a huge ship of some sort. I\u2019ve never seen something
       this enormous floating in my life. Look at those big funnels. The smoke must
       cause the white trail. "
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "Let\u2019s see if we can talk to someone."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - character: {fileID: 0}
+    myText: 
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: GotoGrandmaScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

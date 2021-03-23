@@ -51,6 +51,8 @@ public class SaveSystem : Singleton<SaveSystem>
     public void ChangeScene(string sceneToLoad)
     {
         Debug.Log("ChangeScene");
+        var mus = MainSceneMusic.Instance;
+        if (mus != null) mus.stopMusic();
         nextScene = sceneToLoad;
         if (LevelChanger.Instance != null)
         {
