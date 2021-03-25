@@ -38,7 +38,7 @@ MonoBehaviour:
         m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "We\u2019re conducting research to make a documentary on some mysterious
-      events on the ocean."
+      events in the ocean."
     startEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -66,7 +66,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: f30926a765badbf4db5ab6045420e3f6, type: 2}
-    myText: "Yeah that crazy scientist guy yelled at this ship. It\u2019s not my
+    myText: "Yeah, that crazy scientist guy yelled at this ship. It\u2019s not my
       fault this ship is sailing, is it? If it wouldn\u2019t exist I could never
       have gone on one, could I? The captain is to blame, not me. I\u2019m just enjoying
       the luxury."
@@ -95,7 +95,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
-    myText: "Well she hasn\u2019t changed a bit. Let\u2019s see if the captain could
+    myText: "Well, she hasn\u2019t changed a bit. Let\u2019s see if the captain could
       tell us more about what\u2019s going on. "
     startEvent:
       m_PersistentCalls:

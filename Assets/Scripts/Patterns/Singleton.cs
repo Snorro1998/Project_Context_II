@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// singleton template
+/// <summary>
+/// Singleton object
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class Singleton<T> : MonoBehaviour where T : Component
 {
     public static T Instance

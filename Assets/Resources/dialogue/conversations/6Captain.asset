@@ -33,8 +33,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
-    myText: "Well, that didn\u2019t really help. Without a statement of the captain
-      we could never finish our report. Let\u2019s just give up then\u2026"
+    myText: "Well, that didn\u2019t help. Without a statement of the captain we could
+      never finish our report. Let\u2019s just give up then\u2026"
     startEvent:
       m_PersistentCalls:
         m_Calls: []

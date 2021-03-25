@@ -16,12 +16,12 @@ public class UnityEventHandler : MonoBehaviour, IPointerDownHandler
     public void OnPointerDown(PointerEventData pointerEventData)
     {
         eventHandler.Invoke();
-        DialogueManager.instance.CloseOptions();
-        DialogueManager.instance.inDialogue = false;
+        DialogueManager.Instance.CloseOptions();
+        DialogueManager.Instance.inDialogue = false;
 
         if (myDialogue != null)
         {
-            DialogueManager.instance.EnqueueDialogue(myDialogue);
+            DialogueManager.Instance.EnqueueDialogue(myDialogue);
         }
     }
 }

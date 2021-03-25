@@ -22,7 +22,7 @@ public class DialogueStarter : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        DialogueManager.instance.EnqueueDialogue(dialogue);
+        DialogueManager.Instance.EnqueueDialogue(dialogue);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

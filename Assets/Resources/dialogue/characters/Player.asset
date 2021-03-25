@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   myName: William
-  myPortrait: {fileID: 21300000, guid: c3a12241203cc71478832b728593863a, type: 3}
+  myPortrait: {fileID: 21300000, guid: 72481b6528d3a8744bd9708953b04e1f, type: 3}
   myVoice: {fileID: 0}

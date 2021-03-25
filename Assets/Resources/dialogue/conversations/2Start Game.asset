@@ -20,7 +20,7 @@ MonoBehaviour:
         m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "Yes \u2026 , It looks like we\u2019re going to investigate some calamities
-      on sea."
+      on the sea."
     startEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -40,6 +40,23 @@ MonoBehaviour:
     startEvent:
       m_PersistentCalls:
         m_Calls: []
+  - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
+    myText: "Let\u2019s head east first!"
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: nieuwetestscene
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 0}
     myText: 
     startEvent:
@@ -47,13 +64,13 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: ReturnToMap
-          m_Mode: 1
+          m_MethodName: GotoScene
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: nieuwetestscene
             m_BoolArgument: 0
           m_CallState: 2

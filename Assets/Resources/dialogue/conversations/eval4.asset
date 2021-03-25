@@ -14,15 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
-    myText: Player, do you think we can help it somehow?
+    myText: '{PLAYER}, do you think we can help it somehow?'
     startEvent:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
-    myText: '*shriek'
+    myText: GRAAAAH?
     startEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: PlayMonsterSound2
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
     myText: "I have an idea! Maybe if we give the polyps to the monster it will regain
       it\u2019s beautiful colours."
@@ -62,11 +74,6 @@ MonoBehaviour:
         m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "I\u2019m so sorry..."
-    startEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - character: {fileID: 11400000, guid: 98ec498e4ac13a44d8c6a906c1cdb860, type: 2}
-    myText: Disappears
     startEvent:
       m_PersistentCalls:
         m_Calls: []

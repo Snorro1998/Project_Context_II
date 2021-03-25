@@ -95,7 +95,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
-    myText: Okay, here me out on this one. What if we forced the captain to speak
+    myText: Okay, hear me out on this one. What if we forced the captain to speak
       with us.
     startEvent:
       m_PersistentCalls:

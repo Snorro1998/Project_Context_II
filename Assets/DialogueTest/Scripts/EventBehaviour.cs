@@ -94,4 +94,19 @@ public class EventBehaviour : ScriptableObject
     {
         SaveSystem.Instance.ChangeScene("1_1 BottleScene");
     }
+
+    public void GotoScene(string scenename)
+    {
+        SaveSystem.Instance.ChangeScene(scenename);
+    }
+
+    public void ShowMiniMap()
+    {
+        MinimapManager.Instance.Mode = MinimapManager.MapMode.normal;
+    }
+
+    public void DestroyThing()
+    {
+        SaveSystem.Instance.destroyThing = true;
+    }
 }

@@ -22,7 +22,7 @@ public class TargetMoverV2 : MonoBehaviour
     
     void Update()
     {
-        if (DialogueManager.instance.inDialogue) return;
+        if (DialogueManager.Instance.inDialogue) return;
         if (Input.GetMouseButtonDown(0) && cam != null)
         {
             //Debug.Log("updatetargetposition");

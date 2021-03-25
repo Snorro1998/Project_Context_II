@@ -20,15 +20,48 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
-    myText: "Hmm that scientist was quite serious about the dying corals. That poor
-      man. I wonder why nobody wants to listen to him. He seemed legit. I also wonder
-      what it is he is so afraid of. Could the dying corals really provoke such devastation,
-      or is there something else at play? Something bigger? And what about those
-      mysterious polyps? They will help me, but won\u2019t solve anything? What does
-      that mean? I guess we have no choice but to keep going and find more clues."
+    myText: Hmm that scientist was quite serious about the dying corals. That poor
+      man. I wonder why nobody wants to listen to him. He seemed legit.
     startEvent:
       m_PersistentCalls:
         m_Calls: []
+  - character: {fileID: 0}
+    myText: I also wonder what it is he is so afraid of. Could the dying corals really
+      provoke such devastation, or is there something else at play? Something bigger?
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: nieuwetestscene
+            m_BoolArgument: 0
+          m_CallState: 2
+  - character: {fileID: 0}
+    myText: "And what about those mysterious polyps? They will help me, but won\u2019t
+      solve anything? What does that mean? I guess we have no choice but to keep
+      going and find more clues."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: nieuwetestscene
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 0}
     myText: 
     startEvent:
@@ -36,13 +69,13 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: ReturnToMap
-          m_Mode: 1
+          m_MethodName: GotoScene
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: nieuwetestscene
             m_BoolArgument: 0
           m_CallState: 2

@@ -117,8 +117,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
-    myText: I think it seeked our help. It looked like it got scared or angry somehow.
-      You noticed the white trail behind us Crewmate?
+    myText: I think it sought our help. It looked like it got scared or angry somehow.
+      Did you notice the white trail behind us {CREWMATE}?
     startEvent:
       m_PersistentCalls:
         m_Calls: []

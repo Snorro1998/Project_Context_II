@@ -4,20 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : PersistentSingleton<DialogueManager>
 {
-    public static DialogueManager instance;
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
 
     private void Start()
     {
@@ -102,7 +90,11 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = "";
 
-        dialogueBox.SetActive(!(info.myText == ""));
+        if (info.myText == "")
+        {
+            DequeueDialogue();
+        }
+        //dialogueBox.SetActive(!(info.myText == ""));
 
         StartCoroutine(TypeText(info));
     }

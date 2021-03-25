@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c52c62926f1b20a42a94ce562e0a800c, type: 3}
-  m_Name: 8Convo Back To Boss
+  m_Name: 8Back To Boss
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
@@ -47,15 +47,15 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: f9504f14a8b98994ba22e0ad78e72bfa, type: 2}
     myText: "Oh no, you are in big trouble now, mister. If I were you I would hand
       us the keys of the electric boat immediately. They told us the big boss herself
-      is coming to check whether you provided us the right boat. And you know how
-      the big boss reacts when her orders aren\u2019t obeyed. "
+      is coming to check whether you provided us with the right boat. And you know
+      how the big boss reacts when her orders aren\u2019t obeyed. "
     startEvent:
       m_PersistentCalls:
         m_Calls: []
   - character: {fileID: 11400000, guid: c1271edd8b7495a45841717f41b257d7, type: 2}
     myText: "Oh... uh\u2026 alright then. Here are the keys. Just make sure you get
-      out of here right away. Last time she was mad at me I\u2026 I\u2026 I wet myself.
-      Oops, you didn\u2019t hear that. Now beat it, you scum."
+      out of here right away. The last time she was mad at me I\u2026 I\u2026 I wet
+      myself. Oops, you didn\u2019t hear that. Now beat it, you scum."
     startEvent:
       m_PersistentCalls:
         m_Calls: []

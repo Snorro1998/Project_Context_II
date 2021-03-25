@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BGMusic : Singleton<BGMusic>
+public class BGMusic : PersistentSingleton<BGMusic>
 {
     private AudioSource musicPlayer;
-    private AudioClip currentMusic = null;
+    //private AudioClip currentMusic = null;
 
     private AudioSource sfxPlayer;
     public AudioClip monsterSound;

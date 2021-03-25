@@ -47,6 +47,7 @@ public class PlayerColliderManager : MonoBehaviour
             musicAllowed = true;
             MainSceneMusic.Instance.stopMusic();
 
+            GameManager.Instance.musicInt = 1;
             SaveSystem.Instance.ChangeScene("3 Scientist");
         }
         //klaar
@@ -57,6 +58,7 @@ public class PlayerColliderManager : MonoBehaviour
             musicAllowed = true;
 
             musicInt = 2;
+            GameManager.Instance.musicInt = 2;
             MainSceneMusic.Instance.stopMusic();
             SaveSystem.Instance.ChangeScene("4 Cruise");
         }
@@ -72,6 +74,7 @@ public class PlayerColliderManager : MonoBehaviour
         {
             GameManager.Instance.hasVisitedBoss = true;
             musicInt = 3;
+            GameManager.Instance.musicInt = 3;
             musicAllowed = true;
             MainSceneMusic.Instance.stopMusic();
             SaveSystem.Instance.ChangeScene("8 Boss");

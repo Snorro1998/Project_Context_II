@@ -12,7 +12,7 @@ public class CameraMoveScript : MonoBehaviour
     [SerializeField]
     private float maxCameraDistance = 5f;
     [SerializeField]
-    private float moveSpeed = 1;
+    public float moveSpeed = 1;
     private float zero = 0;
     private void Start()
     {
