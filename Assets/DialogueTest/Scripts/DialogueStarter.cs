@@ -10,7 +10,7 @@ public class DialogueStarter : MonoBehaviour
     public DialogueBase dialogue;
     public bool playOnStart = false;
     public bool playOnce = true;
-    private bool hasTriggered = false;
+    public bool hasTriggered = false;
 
     private void Start()
     {
@@ -22,6 +22,7 @@ public class DialogueStarter : MonoBehaviour
 
     public void TriggerDialogue()
     {
+        hasTriggered = true;
         DialogueManager.Instance.EnqueueDialogue(dialogue);
     }
 
@@ -30,7 +31,7 @@ public class DialogueStarter : MonoBehaviour
         if (!hasTriggered)
         {
             TriggerDialogue();
-            hasTriggered = true;
+            //hasTriggered = true;
         }
     }
 }

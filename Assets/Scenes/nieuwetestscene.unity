@@ -8044,79 +8044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2de8a728d340a247bb3f39ea98a1767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &354395766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 354395769}
-  - component: {fileID: 354395768}
-  - component: {fileID: 354395767}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &354395767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354395766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 012fe2ea75a908e4bb20cf7f94781122, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: f4c2a0f946942504c801395a5f32389a, type: 2}
-  playOnStart: 0
-  playOnce: 1
---- !u!61 &354395768
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354395766}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &354395769
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354395766}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.9, y: 39.69, z: -1.1893158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &355165738
 GameObject:
   m_ObjectHideFlags: 0
@@ -14864,7 +14791,7 @@ MonoBehaviour:
   musicInt: 0
   sprDieselBoat: {fileID: 21300000, guid: a9996ebf28dd44e4e865d256d82ad4da, type: 3}
   sprElectricBoat: {fileID: 21300000, guid: fab4d351678338845afc44497be772c8, type: 3}
-  insaneSpeed: 0
+  insaneSpeed: 1
   boatObj: {fileID: 1226295480}
   camObj: {fileID: 352856031}
 --- !u!4 &593175948
@@ -84693,6 +84620,7 @@ GameObject:
   - component: {fileID: 1479659057}
   - component: {fileID: 1479659056}
   - component: {fileID: 1479659055}
+  - component: {fileID: 1479659058}
   m_Layer: 0
   m_Name: How2Move
   m_TagString: Untagged
@@ -84713,8 +84641,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: f4c2a0f946942504c801395a5f32389a, type: 2}
-  playOnStart: 0
+  playOnStart: 1
   playOnce: 1
+  hasTriggered: 0
 --- !u!61 &1479659056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84722,7 +84651,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479659054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -84749,12 +84678,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479659054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50, y: 39.46, z: -14.442839}
+  m_LocalPosition: {x: -49.93, y: 39.59, z: -14.442839}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 626052002}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1479659058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479659054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbea8aa0091f5ad4cba9fa65025f5dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1490575848
 GameObject:
   m_ObjectHideFlags: 0
@@ -106360,7 +106301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a16e6481f6d7904ca30034438f99712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyThing: 0
 --- !u!4 &1818567219
 Transform:
   m_ObjectHideFlags: 0

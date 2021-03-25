@@ -15,15 +15,97 @@ MonoBehaviour:
   dialogueInfo:
   - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
     myText: "Well I guess that was the last piece of the puzzle then. That poor monster\u2026
-      It just wanted to live and flourish again. Too bad that\u2019s never going
-      to happen. All this time pointing fingers at each other has only worsened the
-      problems at play, instead of improving them. We should listen to what science
-      tells us and all take our responsibility. And even though the cruise ship caused
-      the emissions, they are only able to sail because of the people that make use
-      of them. Apparently there are options that won't harm the corals."
+      It just wanted to live and flourish again."
     startEvent:
       m_PersistentCalls:
         m_Calls: []
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: "Too bad that\u2019s never going to happen."
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: credits
+            m_BoolArgument: 0
+          m_CallState: 2
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: All this time pointing fingers at each other has only worsened the problems
+      at play, instead of improving them.
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: credits
+            m_BoolArgument: 0
+          m_CallState: 2
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: We should listen to what science tells us and all take our responsibility.
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: credits
+            m_BoolArgument: 0
+          m_CallState: 2
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: And even though the cruise ship caused the emissions, they are only able
+      to sail because of the people that make use of them.
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: credits
+            m_BoolArgument: 0
+          m_CallState: 2
+  - character: {fileID: 11400000, guid: 6d5d58e8a2dcb624da1555448632e0ea, type: 2}
+    myText: Apparently there are options that won't harm the corals.
+    startEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: credits
+            m_BoolArgument: 0
+          m_CallState: 2
   - character: {fileID: 0}
     myText: 
     startEvent:
@@ -31,13 +113,13 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: 2741c332d3c39bc419a86804cc632bc3, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: GotoCredits
-          m_Mode: 1
+          m_MethodName: GotoScene
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: credits
             m_BoolArgument: 0
           m_CallState: 2
